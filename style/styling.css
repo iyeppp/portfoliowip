@@ -1,145 +1,114 @@
+/* ================================================= */
+/* == GAYA DASAR & KANVAS UTAMA (Berlaku untuk semua) == */
+/* ================================================= */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); 
-
-.text-header{
-    letter-spacing: 4px;
-    font-size: 30px;
-    font-weight: 700;
-    margin-left: 100px;
-    font-family: "Roboto";
-}
-
-.navbar{
-    text-indent: 20px;
-    color: #f6f7f8;
-    font-family: "Roboto";
-    margin-left: 1000px;
-    margin-top: -55px;
-    text-align: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
   color: #f6f7f8;
   background-color: #131618;
   font-family: "Inter";
-  font-weight: 400;
-  font-style: normal;
 }
 
-.text-jadwal{
-    margin-top: 200px;
-    font-family: "Roboto";
-    text-align: center;
+.main-container {
+    max-width: 1400px; /* Lebar maksimal "kanvas" Anda */
+    margin: 0 auto;    /* Membuat kanvas selalu di tengah */
+    position: relative;/* PENTING: Kunci agar posisi absolut bekerja di dalamnya */
 }
 
-.gambar img{
-    border: solid ;
-    position: static;
-    width: 300px;
-    height: 300px;
-    border-radius:50% ;
-    margin-top: 200px;
-    margin-left: 900px;
-}
-
-.nama-besar{ 
-    color: #f6f7f8;
-    position: absolute;
-    margin-top: -300px;
-    margin-left: 15vmax;
-    line-height: 0.5;
-}
-
-.nama-besar1{ 
-    color: #f6f7f8;
-    position: absolute;
-    margin-top: -270px;
-    margin-left: 17vmax;
-    line-height: 0.5;
-    letter-spacing: 2px;
-    font-size: 25px;
-    font-weight: 700;
-}
+/* Gaya umum lainnya */
+.card1, .card-tabel { border-radius: 25px; background-color: #1b2023; margin-left: auto; margin-right: auto; }
+.container1, .card-tabel-con { padding: 28px; }
+.tabel { color: #f6f7f8; line-height: 40px; text-align: center; border-collapse: collapse; border-radius: 25px; overflow: hidden; margin-left: auto; margin-right: auto; }
+footer { padding: 4rem 0; text-align: center; }
+.footer-icons { display: flex; justify-content: center; gap: 1rem; }
+.footer-icons svg { fill: #f6f7f8; }
+.menu-toggle { display: none; }
 
 
-.nama-nim{
-    
-    color: #f6f7f8;
-    position: absolute;
-    margin-top: -220px;
-    margin-left: 15vmax;
-    line-height: 0.5;
-}
-
-.my-work{
-    text-align: center;
-}
-
-.tabel {
-    color: #f6f7f8;
-    width: 1150px;
-    line-height: 40px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.card1{
-    border-radius: 25px;
-    width: 77%;
-    height: 400px;
-    background-color: #1b2023;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-
-}
-
-.container1 {
-  padding: 2px 16px;
-}
-
-.card-tabel{
-    border-radius: 25px;
-    width: 100%;
-    height: 400px;
-    background-color: #1b2023;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-tabel-con {
-  padding: 28px 28px;  
-}
-
-footer {
-  padding: 4rem 0;
-  background: var(--secondaryBackgroundColor);
-  text-align: center;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-  gap: 1rem;
-}
-
-.footer-icons a {
-  display: inline-block
-}
-
-.footer-icons svg {
-  fill: #3e3f40;
-}
-
-.footer-icons a:hover svg {
-  fill: #000;
+/* ================================================== */
+/* == TAMPILAN DESKTOP (Layar LEBIH DARI 1024px)    == */
+/* ================================================== */
+@media screen and (min-width: 1025px) {
+    .text-header {
+        letter-spacing: 4px;
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 50px; /* Ganti margin dengan padding */
+        font-family: "Roboto";
+    }
+    .navbar {
+        position: absolute; /* Ganti dari margin menjadi posisi absolut */
+        top: 25px;
+        right: 50px;
+        font-family: "Roboto";
+    }
+    .gambar {
+        position: absolute;
+        top: 150px;
+        right: 100px; /* Posisi dari kanan kanvas */
+    }
+    .gambar img {
+        border: solid;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .nama-besar {
+        position: absolute;
+        top: 180px;
+        left: 10%; /* Posisi dari kiri kanvas */
+        line-height: 0.5;
+    }
+    .nama-besar1 {
+        position: absolute;
+        top: 210px;
+        left: 12%; /* Posisi dari kiri kanvas */
+        letter-spacing: 2px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .nama-nim {
+        position: absolute;
+        top: 260px;
+        left: 10%; /* Posisi dari kiri kanvas */
+        line-height: 0.5;
+    }
+    .text-jadwal-awal {
+        /* Beri ruang agar tidak tertimpa elemen absolut di atasnya */
+        padding-top: 650px; 
+        font-family: "Roboto";
+        text-align: center;
+    }
+        .text-jadwal{
+        /* Beri ruang agar tidak tertimpa elemen absolut di atasnya */
+        padding-top: 200px; 
+        font-family: "Roboto";
+        text-align: center;
+    }
+    .tabel { width: 1150px; }
+    .card1, .card-tabel {
+        width: 80%;
+        height: 600px;
+    }
 }
 
 
-
-
+/* ======================================================= */
+/* == TAMPILAN TABLET & SMARTPHONE (Layar 1024px ATAU KURANG) == */
+/* ======================================================= */
+@media screen and (max-width: 1024px) {
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; position: relative; }
+    .text-header { font-size: 24px; }
+    .navbar { display: none; }
+    .menu-toggle { display: flex; flex-direction: column; height: 20px; justify-content: space-between; background: transparent; border: none; cursor: pointer; }
+    .menu-toggle span { display: block; width: 28px; height: 3px; background-color: #f6f7f8; border-radius: 3px; }
+    .navbar.active { display: flex; flex-direction: column; gap: 20px; position: absolute; top: 100%; left: 0; width: 100%; background-color: #1b2023; padding: 20px 0; z-index: 10; text-align: center; }
+    .gambar, .nama-besar, .nama-besar1, .nama-nim { position: static; margin: 0; padding: 0 5%; text-align: center; }
+    .gambar img { margin: 40px auto 20px auto; width: 200px; height: 200px; border-radius: 50%; border: solid; }
+    .nama-besar, .nama-besar1, .nama-nim { line-height: 1.6; }
+    .text-jadwal { text-align: center; margin-top: 80px; }
+    .card1, .tabel, .card-tabel { width: 90%; height: auto; margin-top: 25px; }
+    .container1 { padding-bottom: 15px; }
+    .card-tabel-con { overflow-x: auto; display: flex; justify-content: center; }
+}
