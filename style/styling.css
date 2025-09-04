@@ -1,6 +1,3 @@
-/* ================================================= */
-/* == GAYA DASAR & KANVAS UTAMA (Berlaku untuk semua) == */
-/* ================================================= */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -111,4 +108,5 @@ footer { padding: 4rem 0; text-align: center; }
     .card1, .tabel, .card-tabel { width: 90%; height: auto; margin-top: 25px; }
     .container1 { padding-bottom: 15px; }
     .card-tabel-con { overflow-x: auto; display: flex; justify-content: center; }
+
 }
