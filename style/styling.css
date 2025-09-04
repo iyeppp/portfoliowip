@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); 
+
+.text-header{
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 100px;
+    font-family: "Roboto";
+}
+
+.navbar{
+    text-indent: 20px;
+    color: #f6f7f8;
+    font-family: "Roboto";
+    margin-left: 1000px;
+    margin-top: -55px;
+    text-align: 20px;
+}
+
+body {
+  color: #f6f7f8;
+  background-color: #131618;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-jadwal{
+    margin-top: 200px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.gambar img{
+    border: solid ;
+    position: static;
+    width: 300px;
+    height: 300px;
+    border-radius:50% ;
+    margin-top: 200px;
+    margin-left: 900px;
+}
+
+.nama-besar{ 
+    color: #f6f7f8;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 15vmax;
+    line-height: 0.5;
+}
+
+.nama-besar1{ 
+    color: #f6f7f8;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 17vmax;
+    line-height: 0.5;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.nama-nim{
+    
+    color: #f6f7f8;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 15vmax;
+    line-height: 0.5;
+}
+
+.my-work{
+    text-align: center;
+}
+
+.tabel {
+    color: #f6f7f8;
+    width: 1150px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card1{
+    border-radius: 25px;
+    width: 77%;
+    height: 400px;
+    background-color: #1b2023;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+}
+
+.container1 {
+  padding: 2px 16px;
+}
+
+.card-tabel{
+    border-radius: 25px;
+    width: 100%;
+    height: 400px;
+    background-color: #1b2023;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-tabel-con {
+  padding: 28px 28px;  
+}
+
+footer {
+  padding: 4rem 0;
+  background: var(--secondaryBackgroundColor);
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.footer-icons a {
+  display: inline-block
+}
+
+.footer-icons svg {
+  fill: #3e3f40;
+}
+
+.footer-icons a:hover svg {
+  fill: #000;
+}
+
+
+
+
